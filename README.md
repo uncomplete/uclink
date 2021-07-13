@@ -1,6 +1,6 @@
 Let your starting position determine the path you take more than the path that looks most 'desirable'.
 
-##Linode
+## Linode
 
 I use [Linode's][linode console] cloud hosting services.
 
@@ -32,13 +32,13 @@ Ubuntu: `adduser rick && adduser rick sudo`.
   `sudo systemctl restart sshd`
 
 
-##Development
+## Development
 
 We will use docker during development so as not to pollute our development environment with extraneous python packages and everything else as well as to maintain a reproducible development environment.
 
 We start by creating a basic Hello World flask application with development Dockerfile on our local machine and then create a github repository with it.
 
-###Git
+### Git
 
 Create a git repository and add it to our account.
 
@@ -57,7 +57,7 @@ $> git add README.md ...
 $> git commit -m "initial commit"
 ```
 
-##Deployment
+## Deployment
 
 We will deploy an app using [Flask][flasklink] as the web-app framework, [NGINX][nginxlink] as the web server and reverse proxy, [Gunicorn][gunicornlink] as the web server gateway interface (WSGI) application server, and [Supervisor][supervisorlink] for monitoring and auto-reloading Gunicorn should it go down.
 
